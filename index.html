@@ -118,9 +118,64 @@
         color: #fff;
     }
 
+    .navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+
     </style>
 
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#pricing">PRICING</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
 <div class="jumbotron text-center">
     <h1>Company</h1>
     <p>We specialize in blablabla</p>
@@ -134,7 +189,7 @@
     </form>
   </div>
 
-  <div class="container-fluid">
+  <div id="about" class="container-fluid">
     <div class="row">
       <div class="col-sm-8">
         <h2>About Company Page</h2>
@@ -158,16 +213,16 @@
         <h2>Our Values</h2>
         <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
         <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
-      </div>
-    </div>
-  </div>
+            </div>
+            </div>
+        </div>
 
-  <div class="container-fluid text-center">
-    <h2>SERVICES</h2>
-    <h4>What we offer</h4>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
+        <div id="services" class="container-fluid">
+            <h2>SERVICES</h2>
+            <h4>What we offer</h4>
+            <br>
+        <div class="row">
+        <div class="col-sm-4">
         <span class="glyphicon glyphicon-off logo-small"></span>
         <h4>POWER</h4>
         <p>Lorem ipsum dolor sit amet..</p>
@@ -183,35 +238,35 @@
         <p>Lorem ipsum dolor sit amet..</p>
       </div>
       </div>
-      <br><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-leaf logo-small"></span>
-        <h4>GREEN</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-certificate logo-small"></span>
-        <h4>CERTIFIED</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4>HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-    </div>
-  </div>
+            <br><br>
+        <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-leaf logo-small"></span>
+            <h4>GREEN</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-certificate logo-small"></span>
+            <h4>CERTIFIED</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-wrench logo-small"></span>
+            <h4>HARD WORK</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            </div>
+        </div>
 
-  <div class="container-fluid text-center bg-grey">
-    <h2>Portfolio</h2>
-    <h4>What we have created</h4>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="paris.jpg" alt="Paris">
-          <p><strong>Paris</strong></p>
-          <p>Yes, we built Paris</p>
+        <div id="portfolio" class="container-fluid">
+        <h2>Portfolio</h2>
+        <h4>What we have created</h4>
+        <div class="row text-center">
+            <div class="col-sm-4">
+            <div class="thumbnail">
+            <img src="paris.jpg" alt="Paris">
+            <p><strong>Paris</strong></p>
+            <p>Yes, we built Paris</p>
         </div>
       </div>
       <div class="col-sm-4">
@@ -230,7 +285,7 @@
       </div>
 
       <h2>What our customers say</h2>
- <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -259,10 +314,10 @@
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>
- </div>
-</div> 
-<div class="container-fluid">
+    </a>
+        </div>
+    </div> 
+    <div id="pricing" class="container-fluid">
     <div class="text-center">
       <h2>Pricing</h2>
       <h4>Choose a payment plan that works for you</h4>
@@ -328,7 +383,7 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-grey">
+  <div id="contact" class="container-fluid">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
       <div class="col-sm-5">
